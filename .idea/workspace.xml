@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8be1ebd7-0a19-42f8-9ec6-2091e5fe1c8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../BasicInJava/AlgoExpert/src/io/algoexprt/easy/FindClosestValueInBst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BasicInJava/AlgoExpert/src/io/algoexprt/easy/test/BSTBranchSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BasicInJava/AlgoExpert/src/io/algoexprt/easy/test/FindClosestValueInBstTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BasicInJava/AlgoExpert/src/io/algoexprt/medium/ThreeNumberSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/src/behavioral/chainofresponsibility/ex1/ChainOfResponsibilityEx1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/src/behavioral/chainofresponsibility/ex1/Middleware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/AlgoExpert/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/AlgoExpert/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/bin/creational/singleton/Greeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/bin/creational/singleton/Greeter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/bin/creational/singleton/SingleTonDBDemoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/bin/creational/singleton/SingleTonDBDemoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/src/creational/singleton/SingleTonDBDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/DesignPattrens/src/creational/singleton/SingleTonDBDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/Java8/bin/java8/functionalprogramming/ObservableDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/Java8/bin/java8/functionalprogramming/ObservableDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/Java8/bin/java8/functionalprogramming/StockServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/Java8/bin/java8/functionalprogramming/StockServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/Java8/src/java8/functionalprogramming/ObservableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/Java8/src/java8/functionalprogramming/ObservableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/Java8to15/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/Java8to15/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/Java8to15/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/Java8to15/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/Java8to15/bin/javafeatures/StreamConcepts.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/Java8to15/bin/javafeatures/StreamConcepts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/AnagramDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/AnaylsisDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/ArrayRotationDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/CheckCharOccurenceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/FindNonRepeatedCharacterDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/FirstLastDigitSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/FizzBuzzDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/GetHighestNumberDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/IsPrimeNumberDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/NumberIsAmstrong.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/PerfectSquareDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/RemoveWhiteSpaceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/ReverseBinaryTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/ReverseBinaryTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/ReverseIntegerDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/ReverseLinkedList$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/ReverseLinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/ReverseStringDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/StringIsPalindromeDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/SwappTwoNumberDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/TwoNumSumDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/JavaInterviewCoding/bin/VowelsCountDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BasicInJava/Reactive-Java/src/main/java/com/reactive/java/ReactiveJavaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BasicInJava/Reactive-Java/src/main/java/com/reactive/java/ReactiveJavaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Cloud/movie.info.service/movie.info.service/src/main/java/io/javabrains/movieinfoservice/MovieInfoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_Cloud/movie.info.service/movie.info.service/src/main/java/io/javabrains/movieinfoservice/MovieInfoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Cloud/resful-web-services/target/classes/META-INF/maven/com.in28minutes.rest.webservices/resful-web-services/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_Cloud/resful-web-services/target/classes/META-INF/maven/com.in28minutes.rest.webservices/resful-web-services/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Core/aspect-demo.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/src/main/java/com/vp/spring/aop/AspectDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/src/main/java/com/vp/spring/aop/AspectDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/src/main/java/com/vp/spring/aop/data/Dao2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/src/main/java/com/vp/spring/aop/data/Dao2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_Core/aspect-demo/aspect-demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Core/mockito-demo.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Spring_Core/mockito-demo/mockito-demo/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Spring_Core/mockito-demo/mockito-demo/.classpath" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1rc1eTrH3tjJTU7csSgqu5YyGL4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Threatdetection" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8be1ebd7-0a19-42f8-9ec6-2091e5fe1c8c" name="Default Changelist" comment="" />
+      <created>1619260658990</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619260658990</updated>
+    </task>
+    <servers />
+  </component>
+</project>

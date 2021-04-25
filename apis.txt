@@ -1,0 +1,30 @@
+Detection APIS->>>
+GET -->
+detections --> return all
+detections/{id} --> by id
+detections/fromto/{from}/{to}
+detections/byappname/{byappname}
+detections/byapptype/{byapptype}
+detections/bydevices
+detections/bydevices/{deviceId}
+
+POST
+
+detections --> save detection with decvice Id
+
+// PUT
+
+update detection after scan 
+
+// delete 
+delete detection after scan 
+
+
+/// DEVICE 
+
+GET --> 
+devices --> return all devices 
+detections/{id} --> by id
+
+POST --> 
+adddevice
