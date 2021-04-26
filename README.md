@@ -33,4 +33,4 @@ Java 8, Spring Boot, Spring Data, Hibernate, H2 Database, Lombok
 4. **v1/devices/{deviceId}** DELETE API to delete particular device. 
 
 ### Unit Test
-Added few unit test cases for **DetectionRepository** and **DeviceRepository**
+Added few unit test cases for **DetectionRepository** and **DeviceRepository** which cover few negative and postive test cases. 
