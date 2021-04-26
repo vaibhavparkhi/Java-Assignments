@@ -12,9 +12,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.List;
 
 @SpringBootApplication
 public class ThreatdetectionApplication implements CommandLineRunner {
@@ -31,13 +28,7 @@ public class ThreatdetectionApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-
 		long epoch = Instant.now().toEpochMilli();
-		System.out.println(epoch);
-
-
-		System.out.println(UtilsManager.convertEpochToLocalDateTime(epoch));
-
 		Device device = new Device("IOS","IOS-G98880F","3.0");
 		deviceRepository.save(device);
 		Detection detection1 = new Detection(epoch, "PayTM", "Hybrid", DetectionType.NEW_DETECTION);
@@ -45,12 +36,6 @@ public class ThreatdetectionApplication implements CommandLineRunner {
 		detection1.setDeleted(false);
 		device.addDetection(detection1);
 		detectionRepository.save(detection1);
-
 		detectionRepository.deleteById(20004L);
-
-
-//		Detection detection = detectionRepository.findAllById(Long.valueOf());
-//		System.out.println(detection);
-
 	}
 }

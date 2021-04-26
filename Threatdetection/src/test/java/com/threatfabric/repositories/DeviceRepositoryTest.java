@@ -1,21 +1,19 @@
 package com.threatfabric.repositories;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
-
-import java.util.List;
-import java.util.Optional;
-
+import com.threatfabric.entities.Detection;
+import com.threatfabric.entities.Device;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
-
-import com.threatfabric.entities.Detection;
-import com.threatfabric.entities.Device;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Optional;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 public class DeviceRepositoryTest {

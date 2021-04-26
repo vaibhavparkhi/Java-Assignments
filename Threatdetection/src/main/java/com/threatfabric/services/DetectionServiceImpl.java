@@ -1,14 +1,23 @@
 package com.threatfabric.services;
 
+import com.threatfabric.dto.DetectionRequest;
 import com.threatfabric.entities.Detection;
+import com.threatfabric.entities.DetectionType;
+import com.threatfabric.entities.Device;
+import com.threatfabric.exceptions.DetectionNotFoundException;
+import com.threatfabric.exceptions.DeviceNotFoundException;
 import com.threatfabric.repositories.DetectionRepository;
 import com.threatfabric.repositories.DeviceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
+@Service
 public class DetectionServiceImpl implements DetectionService {
 
     @Autowired
@@ -25,13 +34,30 @@ public class DetectionServiceImpl implements DetectionService {
     }
 
     @Override
-    public Optional<Detection> findDetectionById(Long detectionId) {
-        return detectionRepository.findAllById(detectionId);
+    public List<Detection> fetchAllDetectionsByDeviceId(Long deviceId) {
+        Optional<Device> deviceOpt = deviceRepository.findById(deviceId);
+        List<Detection> detections = new ArrayList<>();
+        if (deviceOpt.isPresent()) {
+            Device device = deviceOpt.get();
+            detections = device.getDetections().stream().sorted(detectionComparator()).collect(Collectors.toList());
+        }
+        return detections;
+    }
+
+    @Override
+    public Optional<Detection> findDetectionById(Long deviceId, Long detectionId) {
+        Optional<Device> deviceOpt = deviceRepository.findById(deviceId);
+        if (deviceOpt.isPresent()) {
+            Device device = deviceOpt.get();
+            return device.getDetections().stream().filter(detection -> detectionId.equals(detection.getDetectionId())).findFirst();
+        } else {
+            throw new DeviceNotFoundException("Device with Id " + deviceId + " not found!");
+        }
     }
 
     @Override
     public List<Detection> findDetectionBetweenDates(Long from, Long to) {
-        List<Detection> detections = this.findAllDetection();
+        List<Detection> detections = this.findAllDetections();
         List<Detection> filteredListByDate = filterByFromToDate(from, to, detections);
         return filteredListByDate;
     }
@@ -62,18 +88,57 @@ public class DetectionServiceImpl implements DetectionService {
     }
 
     @Override
-    public void updateDetection(Long deviceId, Long detectionId) {
+    public void resolvedDetection(Long deviceId, Long detectionId) {
+        Optional<Device> deviceOpt = deviceRepository.findById(deviceId);
+        if (deviceOpt.isPresent()) {
+            Device device = deviceOpt.get();
+            deviceRepository.save(device);
+            Optional<Detection> associatedDetectionOpt = device.getDetections().stream().filter(detection -> detectionId.equals(detection.getDetectionId())).findFirst();
+            if (associatedDetectionOpt.isPresent()) {
+                Detection associatedDetection = associatedDetectionOpt.get();
+                associatedDetection.setDetectionType(DetectionType.RESOLVED_DETECTION);
+                detectionRepository.save(associatedDetection);
+            } else {
+                throw new DetectionNotFoundException("Detection with Id " + detectionId + " not found with associated device id " + deviceId);
+            }
 
+        } else {
+            throw new DeviceNotFoundException("Device with Id " + deviceId + " not found!");
+        }
     }
 
     @Override
-    public void deleteDetectionById(Long detectionId) {
+    public void clearDetectionById(Long deviceId, Long detectionId) {
+        Optional<Device> deviceOpt = deviceRepository.findById(deviceId);
+        if (deviceOpt.isPresent()) {
+            Device device = deviceOpt.get();
+            Optional<Detection> associatedDetectionOpt = device.getDetections().stream().filter(detection -> detectionId.equals(detection.getDetectionId())).findFirst();
+            if (associatedDetectionOpt.isPresent()) {
+                Detection associatedDetection = associatedDetectionOpt.get();
+                device.removeDetection(associatedDetection);
+                deviceRepository.save(device);
+                associatedDetection.setDetectionType(DetectionType.NO_DETECTION);
+                detectionRepository.delete(associatedDetection);
+            } else {
+                throw new DetectionNotFoundException("Detection with Id " + detectionId + " not found with associated with device id " + deviceId);
+            }
 
+        } else {
+            throw new DeviceNotFoundException("Device with Id " + deviceId + " not found!");
+        }
     }
 
     @Override
-    public void deleteAllDetectionOfDevice(Long deviceId) {
-
+    public void clearAllDetectionOfDevice(Long deviceId) {
+        Optional<Device> deviceOpt = deviceRepository.findById(deviceId);
+        if (deviceOpt.isPresent()) {
+            Device device = deviceOpt.get();
+            List<Detection> detections = device.getDetections();
+            device.removeAllDetections(detections);
+            detectionRepository.deleteAll(detections);
+        } else {
+            throw new DeviceNotFoundException("Device with Id " + deviceId + " not found!");
+        }
     }
 
     /**
