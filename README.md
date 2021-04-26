@@ -4,7 +4,7 @@
 The REST API would be used on the server-side to get notifications about malware detections from the clients for scanned devices. 
 
 ### Technologies Used: 
-Java 8, Spring Boot, Spring Data, Hibernate, H2 Database
+Java 8, Spring Boot, Spring Data, Hibernate, H2 Database, Lombark
 
 ## Solution Description:
 **At data layer** used entity relationship using Spring Data JPA which has to entity classes Device and Detection. The device has the @OnetoMany relationship with Detection. And Detection entity has a relationship @ManyToOne with Device. To remove detection for the particular device, I used the soft deletion strategy of Hibernate which could be used for further analytics of data for detection reports. Using Spring JPA layer to connects with database for CRUD operation. 
@@ -31,3 +31,6 @@ Java 8, Spring Boot, Spring Data, Hibernate, H2 Database
 2. **v1/devices/{deviceId}** GET API return particular device by passing deviceId.
 3. **v1/devices** POST API to save the device.
 4. **v1/devices/{deviceId}** DELETE API to delete particular device. 
+
+### Unit Test
+Added few unit test cases for **DetectionRepository** and **DeviceRepository**
