@@ -53,7 +53,7 @@ public class DetectionController {
      * @param deviceId
      * @param detectionId
      * @return ResponseEntity with Success or Error
-     * @apiNote Its returns detections by Id or api error
+     * @apiNote Its returns detection by passing detectionId and deviceId
      */
     @GetMapping("/v1/detections/{deviceId}/{detectionId}")
     public ResponseEntity findDetectionById(@PathVariable @NotBlank Long deviceId, @PathVariable @NotBlank Long detectionId) {
